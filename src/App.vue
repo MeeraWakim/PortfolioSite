@@ -1,63 +1,33 @@
 <template>
-  <div id="app">
-  
-    <v-btn>HELLO</v-btn>
-  
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blanka">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-  </div>
+    <v-app>
+        <v-toolbar flat>
+            <v-spacer></v-spacer>
+            <v-btn flat>ABOUT ME</v-btn>
+            <v-btn flat>PORTFOLIO</v-btn>
+            <v-btn flat>RESUME</v-btn>
+            <v-btn flat>CONTACT</v-btn>
+        </v-toolbar>
+
+        <v-jumbotron>
+            <v-container fill-height>
+                <v-layout align-center>
+                    <v-flex>
+                    <v-layout row wrap>
+                        <h3 class="display-3">Hi, I'm Meera.</h3>
+
+    </v-layout>
+                        <v-divider class="my-3"></v-divider>
+                    </v-flex>
+                </v-layout>
+            </v-container>
+        </v-jumbotron>
+    </v-app>
 </template>
 
 <script>
-export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to MEERAS AMAZING WEBSITE'
-    }
-  }
-}
+
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
